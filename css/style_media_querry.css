@@ -1,0 +1,295 @@
+
+/* Note the media querry order should be 
+
+from the biggest max-width to the smallest max-width
+
+followed by 
+
+from the smallest min-wdth to the biggest min-width 
+
+else you will have a wrong media querry flow
+
+*/
+
+
+
+@media only screen and (max-width:850px)
+{ 
+
+    /* HEADER STARTS HEADER STARTS HEADER STARTS HEADER STARTS HEADER STARTS HEADER STARTS HEADER STARTS */
+	/* NAVIGATION STARTS NAVIGATION STARTS NAVIGATION STARTS NAVIGATION STARTS */
+
+	.mobile-menu
+	{
+	
+	display: inline-flex;
+	
+	}
+	
+	.nav_bar{
+		display: none;
+		text-align: right;
+		justify-content: space-between;
+		width: 100%;
+		
+	
+	} 
+	
+	
+	.mobile-menu:hover + .nav_bar, .nav_bar:hover, .nav_bar ul, .nav_bar ul:hover
+	{
+		display: block;
+		position: absolute;
+		margin-top: 10px;
+		right: 5px;
+		background-color:rgb(0, 0, 0);
+		box-shadow: rgb(235,235,235) 1px 0 5px 1px;
+		
+	}
+
+	
+	.nav_bar ul li
+	{
+		padding: 10px;
+		border-bottom: 1px dotted white;
+		text-align: center;
+	}
+
+	.nav_bar ul li:last-child
+	{
+		border-bottom: none;
+	}
+
+	.nav_bar ul li:hover .sub1
+	{
+		display: block;
+		position: absolute;
+		/* background-color:  rgb(252,41,34); */
+		margin: 0;
+		margin-top: -53.5px;
+		right: 80%;
+		/* box-shadow: rgb(34,81,252) 1px 0 5px 1px; */
+
+	}
+
+
+	.hover_me:hover .sub2
+	{
+		position:absolute;
+		display: block;
+		margin: 0;
+		right: 0;
+		margin-top: -53.5px;
+		right: 90%;
+		background-color: rgb(172,169,109);
+		z-index: 1;
+		
+	}
+
+	
+	/* NAVIGATION ENDS NAVIGATION ENDS NAVIGATION ENDS NAVIGATION ENDS */
+	/* HEADER ENDS HEADER ENDS HEADER ENDS HEADER ENDS HEADER ENDS HEADER ENDS HEADER ENDS HEADER ENDS */
+
+	
+	.zx
+	{
+		display: block;
+		background-color: blueviolet;
+		text-align: center;
+	}
+	
+
+
+}
+
+
+
+@media only screen and (max-width:625px)
+{
+
+
+	.mobile-menu
+	{
+	
+	display: inline-flex;
+	
+	}
+	
+	.nav_bar{
+		display: none;
+		text-align: right;
+		justify-content: space-between;
+		width: 100%;
+		
+	
+	} 
+	
+	
+	.mobile-menu:hover + .nav_bar, .nav_bar:hover, .nav_bar ul, .nav_bar ul:hover
+	{
+		display: block;
+		position: absolute;
+		margin-top: 10px;
+		right: 5px;
+		background-color:rgb(0, 0, 0);
+		box-shadow: rgb(235,235,235) 1px 0 5px 1px;
+		
+	}
+
+	
+	.nav_bar ul li
+	{
+		padding: 10px;
+		border-bottom: 1px dotted white;
+		text-align: center;
+	}
+
+	.nav_bar ul li:last-child
+	{
+		border-bottom: none;
+	}
+
+	.nav_bar ul li:hover .sub1
+	{
+		display: block;
+		position: absolute;
+		margin: 0;
+		margin-top: -53.5px;
+		right: 80%;
+
+	}
+
+
+	.hover_me:hover .sub2
+	{
+		position:relative;
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		right: 0;
+		padding: 0;
+		margin-top: 0;
+		right: 0;
+		background-color:rgb(0, 0, 0);
+		box-shadow: none;
+		z-index: 1;
+		
+		
+	}
+	.hover_me:hover .sub2 ul
+	{
+		position:relative;
+		display: block;
+		margin: 0 auto;
+		right: 0px;
+		padding: 0;
+		margin-top: 0px;
+		width: 100%;
+		background-color:rgb(0, 0, 0);
+		
+	}
+	
+	/* NAVIGATION ENDS NAVIGATION ENDS NAVIGATION ENDS NAVIGATION ENDS */
+	/* HEADER ENDS HEADER ENDS HEADER ENDS HEADER ENDS HEADER ENDS HEADER ENDS HEADER ENDS HEADER ENDS */
+
+	
+
+
+
+}
+
+
+
+
+@media only screen and (max-width:500px)
+{ 
+
+	/* HEADER STARTS HEADER STARTS HEADER STARTS HEADER STARTS HEADER STARTS HEADER STARTS */
+	/* NAVIGATION STARTS NAVIGATION STARTS NAVIGATION STARTS NAVIGATION STARTS */
+
+
+	.mobile-menu:hover + .nav_bar, .nav_bar:hover, .nav_bar ul, .nav_bar ul:hover
+	{
+		display: block;
+		position: absolute;
+		width: 98%;
+		margin: 1%;
+		margin-top: 10px;
+		right: 0%;
+		background-color:rgb(0, 0, 0);
+		box-shadow: rgb(235,235,235) 1px 0 5px 1px;
+		z-index: 1;
+		
+	}
+	
+
+	.nav_bar ul li:hover .sub1
+	{
+		display: block;
+		position: absolute;
+		width: 98%;
+		margin: 0 auto;
+		margin-top: -53.5px;
+		right: 0;
+		
+
+	}
+	
+	.nav_bar ul li:hover .sub1
+	{
+		display: block;
+		position: absolute;
+		width:100%;
+		margin: 0 auto;
+		margin-top: 0;
+		right: 0;
+		
+
+	}
+
+	
+	.hover_me:hover .sub2
+	{
+		position:relative;
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		right: 0;
+		padding: 0;
+
+		right: 0;
+		background-color:rgb(0, 0, 0);
+		box-shadow: none;
+		z-index: 1;
+		
+		
+	}
+	.hover_me:hover .sub2 ul
+	{
+		position:relative;
+		display: block;
+		margin: 0 auto;
+		right: 0px;
+		padding: 0;
+		margin-top: 10px;
+		width: 100%;
+		background-color:rgb(0, 0, 0);
+		
+	}
+
+}
+
+@media only screen and (max-width:300px)
+{ 
+
+	.son9, .sonx8, .sonx7, .boxx, .box, .son9
+	{
+		min-width: 50px;
+	}
+
+	.logo 
+	{
+		margin: 1px;
+	}
+
+}
